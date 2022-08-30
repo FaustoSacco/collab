@@ -1,7 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import { greeting } from "./lessons/functions/functions";
+import { Bike } from "./lessons/classes/classes";
+import "./App.css";
 
 function App() {
+  const initialGreeting = () => {
+    return `Hello ${greeting()}`;
+  };
+
+  // const firstBike = new Bike("mountain");
+
+  const firstBike = {
+    type: "mountain",
+  };
+
+  const secondBike = new Bike("BMX");
+  const today = new Date();
+
+  console.log(firstBike);
+  console.log(secondBike);
+  console.log(today);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +36,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>{initialGreeting()}</p>
       </header>
     </div>
   );
