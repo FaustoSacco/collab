@@ -1,0 +1,21 @@
+.style-icon {
+    background-color: pink;
+  
+    
+}
+
+.style-sentence{
+    color: royalblue;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Burger-logo {
+    height: 45px;
+    width: 50px;
+    background-color: greenyellow;
+    
+}

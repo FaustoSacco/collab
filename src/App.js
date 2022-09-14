@@ -1,28 +1,18 @@
-import logo from "./logo.svg";
-import { greeting } from "./lessons/functions/functions";
-import { Bike } from "./lessons/classes/classes";
-import "./App.css";
+import FullBurger from "./components/FullBurger";
+import logo from "./assets/logo.svg";
+import burger from "./assets/burger-bar.png";
+import "./styles/App.css";
+import React from "react";
+import Footer from "./components/Footer";
+import FooterText from "./components/FooterText";
+import Search from "./components/SearchBar";
 
 function App() {
-  const initialGreeting = () => {
-    return `Hello ${greeting()}`;
-  };
-
-  // const firstBike = new Bike("mountain");
-
-  const firstBike = {
-    type: "mountain",
-  };
-
-  const secondBike = new Bike("BMX");
-  const today = new Date();
-
-  console.log(firstBike);
-  console.log(secondBike);
-  console.log(today);
-
   return (
     <div className="App">
+      <FullBurger />
+      <img src={burger} className="Burger-logo" alt="burger" />
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -36,8 +26,10 @@ function App() {
         >
           Learn React
         </a>
-        <p>{initialGreeting()}</p>
       </header>
+      <Footer />
+      <FooterText />
+      <Search />
     </div>
   );
 }
