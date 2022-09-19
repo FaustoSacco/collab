@@ -12,3 +12,12 @@ function App() {
 }
 
 export default App;
+
+/*
+  We need to think about architecture: Three personas
+
+  1. shift swap initiatee
+  2. shift swap initiator
+  3. manager role to approve OR decline
+
+*/
