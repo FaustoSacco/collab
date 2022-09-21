@@ -4,8 +4,24 @@ import Product from "./components/Product";
 function App() {
   return (
     <div className="App">
-      <Product name="Fairy" description="Washing up liquid" />
-      <Product name="Hovis Bread" description="Bread" />
+      <Product
+        name="Fairy"
+        description="Washing up liquid"
+        category="Cleaning"
+        benefits="Two times longer than other brands"
+      />
+      <Product
+        name="Hovis Bread"
+        description="Bread"
+        category="Food"
+        benefits="Same Quality for less money"
+      />
+      <Product
+        name="iPhone 13 Pro Max"
+        description="Mobile service"
+        category="Technology"
+        benefits="Maximize screen space"
+      />
       <Product />
     </div>
   );
